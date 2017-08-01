@@ -24,8 +24,7 @@ namespace ServiceConsumeProject.Controllers
 
         public async Task<ActionResult> GetPosts()
         {
-
-            return View("index",
+            return View("Post",
                 await service.GetPostsAsync()
             );
         }
